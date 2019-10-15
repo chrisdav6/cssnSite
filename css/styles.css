@@ -61,7 +61,7 @@ body {
 }
 
 .pageSearchField {
-  width: 1090px;
+  width: 1065px;
   position: absolute;
   right: 50px;
   top: -4px;
@@ -303,7 +303,11 @@ body {
 /*******MEDIA QUERIES********/
 @media(max-width: 1024px) {
   .pageSearchField {
-    width: 865px;
+    width: 850px;
+  }
+
+  .intSwitchLabel {
+    font-size: .85rem;
   }
 }
 
