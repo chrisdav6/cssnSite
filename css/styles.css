@@ -1,0 +1,58 @@
+/***********BASE*********/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  /* New width as of Oct 2019 */
+  max-width: 1247px;
+  height: 100%;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+/***********HEADER*********/
+
+#pageHeader {
+  height: 40px;
+  background: #0C0C0C;
+  color: rgb(230, 230, 230);
+}
+
+#pageHeader .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.pageNav ul {
+  display: flex;
+}
+
+.pageNav li a {
+  font-size: 0.875rem;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 1.2em;
+  padding: .4em 0;
+  transition: color .3s;
+}
+
+.pageNav li a:hover {
+  color: #fff;
+}
+
+.pageSearchField {
+  width: 0;
+  visibility: hidden;
+}
+
+.searchLabel {
+  margin: 0 1.5em 0 .75em;
+}
