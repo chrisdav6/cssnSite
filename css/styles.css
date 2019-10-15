@@ -1,7 +1,10 @@
 /***********BASE*********/
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open sans", Arial, sans-serif;
 }
 
 .container {
@@ -55,4 +58,95 @@ body {
 
 .searchLabel {
   margin: 0 1.5em 0 .75em;
+}
+
+.intSwitchLabel,
+.searchLabel,
+.expandedSwitchLabel {
+  transition: color .3s;
+}
+
+.intSwitchLabel:hover,
+.searchLabel:hover,
+.expandedSwitchLabel:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.internationalEdition {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#intSwitch:checked~.internationalBlock {
+  opacity: 1;
+  visibility: visible;
+}
+
+.internationalBlock {
+  background: rgba(0, 0, 0, .9);
+  position: absolute;
+  top: 40px;
+  left: -45px;
+  text-align: right;
+  padding: .5em 1em 0;
+  width: 250px;
+  font-weight: 300;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+
+.internationalBlock li {
+  margin-bottom: 1.25em;
+  padding: 0 1em;
+  transition: color .3s;
+}
+
+.internationalBlock li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.internationalBlock hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background: #bfbfbf;
+  margin-bottom: 1.25em;
+}
+
+.row-block,
+.internationalBlock p {
+  padding: 0 1em;
+}
+
+.radioFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25em;
+  margin-bottom: 1.45em;
+}
+
+.radioFlex input {
+  margin-right: 0.375em;
+}
+
+.confirm {
+  padding: .5em 1em;
+  background: transparent;
+  color: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  margin-bottom: 1.75em;
+  font-family: "Open sans",
+    Arial,
+    sans-serif;
+  transition: color .3s, border .3s;
+}
+
+.confirm:hover {
+  color: #fff;
+  border: 1px solid #fff;
 }

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
   <!-- Reset CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- Font Awesome -->
@@ -51,7 +53,29 @@
       <div class="headerRight">
         <div class="internationalEdition">
           <input type="checkbox" name="intSwitch" id="intSwitch" hidden>
-          <label for="intSwitch">Edition +</label>
+          <label for="intSwitch" class="intSwitchLabel">International Edition +</label>
+          <div class="internationalBlock">
+            <ul>
+              <li>U.S.</li>
+              <li>Arabic</li>
+              <li>Español</li>
+            </ul>
+            <hr>
+            <p>Set edition preference:</p>
+            <div class="row-block radioFlex">
+              <div>
+                <input type="radio" name="editionPref" id="us" checked>
+                <label for="us">U.S.</label>
+              </div>
+              <div>
+                <input type="radio" name="editionPref" id="int">
+                <label for="int">International</label>
+              </div>
+            </div>
+            <div class="row-block">
+              <button class="confirm">Confirm</button>
+            </div>
+          </div>
         </div>
         <div class="pageSearch">
           <input type="checkbox" name="searchSwitch" id="searchSwitch" hidden>
@@ -60,7 +84,7 @@
         </div>
         <div class="headerExpandedMenu">
           <input type="checkbox" name="expandedSwitch" id="expandedSwitch" hidden>
-          <label for="expandedSwitch"><i class="fas fa-bars"></i></label>
+          <label for="expandedSwitch" class="expandedSwitchLabel"><i class="fas fa-bars"></i></label>
         </div>
       </div><!-- /headerRight -->
     </div><!-- /container -->
