@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="./css/reset.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!-- Bootstrap Grid CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- Favicon -->
@@ -21,7 +24,7 @@
 <body>
 
   <header id="pageHeader">
-    <div class="container">
+    <div class="wrapper">
       <div class="headerLeft">
         <div class="pageLogo">
           <a href="index.html">
@@ -53,7 +56,7 @@
       <div class="headerRight">
         <div class="internationalEdition">
           <input type="checkbox" name="intSwitch" id="intSwitch" hidden>
-          <label for="intSwitch" class="intSwitchLabel">International Edition +</label>
+          <label for="intSwitch" class="intSwitchLabel">International Edition</label>
           <div class="internationalBlock">
             <ul>
               <li>U.S.</li>
@@ -85,13 +88,215 @@
         </div>
         <div class="headerExpandedMenu">
           <input type="checkbox" name="expandedSwitch" id="expandedSwitch" hidden>
-          <label for="expandedSwitch" class="expandedSwitchLabel"><i class="fas fa-bars"></i></label>
+          <label for="expandedSwitch" class="expandedSwitchLabel">
+            <span class="fa-stack">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </span>
+          </label>
           <div class="headerExpandedMenuBlock">
 
-          </div>
-        </div>
+            <div class="wrapper">
+              <div class="expandedTopBlock">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>US</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Crime + Justice</a></li>
+                          <li><a href="#">Energy + Environment</a></li>
+                          <li><a href="#">Extreme Weather</a></li>
+                          <li><a href="#">Space + Science</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>World</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Africa</a></li>
+                          <li><a href="#">Americas</a></li>
+                          <li><a href="#">Asia</a></li>
+                          <li><a href="#">Austrailia</a></li>
+                          <li><a href="#">China</a></li>
+                          <li><a href="#">Europe</a></li>
+                          <li><a href="#">India</a></li>
+                          <li><a href="#">Middle East</a></li>
+                          <li><a href="#">United Kingdom</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Politics</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">45</a></li>
+                          <li><a href="#">Congress</a></li>
+                          <li><a href="#">SCOTUS</a></li>
+                          <li><a href="#">Facts First</a></li>
+                          <li><a href="#">2020</a></li>
+                          <li><a href="#">2019 Elections</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Business</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Markets</a></li>
+                          <li><a href="#">Tech</a></li>
+                          <li><a href="#">Media</a></li>
+                          <li><a href="#">Success</a></li>
+                          <li><a href="#">Perspectives</a></li>
+                          <li><a href="#">Videos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Opinion</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Political Op-Eds</a></li>
+                          <li><a href="#">Social Commentary</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Health</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Food</a></li>
+                          <li><a href="#">Fitness</a></li>
+                          <li><a href="#">Welness</a></li>
+                          <li><a href="#">Parenting</a></li>
+                          <li><a href="#">Vital Signs</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!-- /row -->
+                  <div class="row">
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Entertainment</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Stars</a></li>
+                          <li><a href="#">Screen</a></li>
+                          <li><a href="#">Binge</a></li>
+                          <li><a href="#">Culture</a></li>
+                          <li><a href="#">Media</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Tech</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Innovate</a></li>
+                          <li><a href="#">Gadget</a></li>
+                          <li><a href="#">Mission: Ahead</a></li>
+                          <li><a href="#">Upstarts</a></li>
+                          <li><a href="#">Work Transformed</a></li>
+                          <li><a href="#">Innovative Cities</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Style</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Arts</a></li>
+                          <li><a href="#">Design</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Architechture</a></li>
+                          <li><a href="#">Luxury</a></li>
+                          <li><a href="#">Autos</a></li>
+                          <li><a href="#">Video</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Travel</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Destinations</a></li>
+                          <li><a href="#">Food & Drink</a></li>
+                          <li><a href="#">Play</a></li>
+                          <li><a href="#">Stay</a></li>
+                          <li><a href="#">Videos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Sports</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Pro Football</a></li>
+                          <li><a href="#">College Football</a></li>
+                          <li><a href="#">Basketball</a></li>
+                          <li><a href="#">Baseball</a></li>
+                          <li><a href="#">Soccer</a></li>
+                          <li><a href="#">Olympics</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                      <div class="expanded-col">
+                        <a href="#">
+                          <h3>Videos</h3>
+                        </a>
+                        <ul>
+                          <li><a href="#">Live TV</a></li>
+                          <li><a href="#">Digital Studios</a></li>
+                          <li><a href="#">CNN Films</a></li>
+                          <li><a href="#">HLN</a></li>
+                          <li><a href="#">TV Schedule</a></li>
+                          <li><a href="#">TV Shows A-Z</a></li>
+                          <li><a href="#">CNNVR</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div><!-- /row -->
+                </div>
+              </div><!-- /expandedTopBlock -->
+              <hr>
+              <div class="expandedBottomBlock">
+                <p>Follow CNN</p>
+                <div class="divider"></div>
+                <ul class="social">
+                  <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div><!-- /expandedBottomBlock -->
+            </div><!-- /wrapper -->
+
+          </div><!-- /headerExpandedMenuBlock -->
+        </div><!-- /headerExpandedMenu -->
       </div><!-- /headerRight -->
-    </div><!-- /container -->
+    </div><!-- /wrapper -->
   </header>
 
 </body>
