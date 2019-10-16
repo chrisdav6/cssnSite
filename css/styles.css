@@ -260,10 +260,10 @@ body {
   padding: 0;
 }
 
-.headerExpandedMenuBlock hr {
+.expandedBlockDivider {
   border: none;
   height: 1px;
-  background: #bfbfbf;
+  background: rgb(77, 77, 77);
   width: 100%;
   margin: 3em 0;
 }
@@ -300,6 +300,78 @@ body {
   color: #fff;
 }
 
+/*******MAIN********/
+main {
+  height: 800px;
+}
+
+/*******FOOTER********/
+#pageFooter {
+  background: #0C0C0C;
+  padding: 3.75em 0;
+  color: rgb(230, 230, 230);
+}
+
+.footerSearch {
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.footerSearchField {
+  width: 97%;
+  height: 30px;
+  padding-left: .5em;
+}
+
+.footerSearchFieldLabel {
+  position: absolute;
+  right: 35px;
+  top: 0;
+  height: 30px;
+  line-height: 35px;
+  color: #0C0C0C;
+}
+
+#pageFooter .expandedBottomBlock {
+  margin-top: 4em;
+  display: flex;
+}
+
+#pageFooter .expandedBottomBlock .col-md-6 {
+  padding-left: 0;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.terms li {
+  display: inline-block;
+}
+
+.terms a {
+  color: rgb(230, 230, 230);
+  font-size: .75rem;
+  text-decoration: none;
+  margin-right: 1em;
+  transition: color .3s;
+  line-height: 1.5;
+}
+
+.terms a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.copy {
+  color: rgb(230, 230, 230);
+  font-size: .75rem;
+  margin-top: 3em;
+  line-height: 1.5;
+}
+
 /*******MEDIA QUERIES********/
 @media(max-width: 1024px) {
   .pageSearchField {
@@ -332,12 +404,26 @@ body {
     margin-top: 0;
   }
 
-  .headerExpandedMenuBlock hr {
+  .expandedBlockDivider {
     margin: 0em 0 3em 0;
   }
 
   .expandedBottomBlock {
     justify-content: center;
+  }
+
+  #pageFooter {
+    text-align: center;
+  }
+
+  #pageFooter .expandedBottomBlock {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .footerSocial {
+    justify-content: center;
+    margin: 2em 0;
   }
 }
 
@@ -350,7 +436,12 @@ body {
     display: none;
   }
 
-  .headerExpandedMenuBlock hr {
+  .expandedBlockDivider {
+    width: 25%;
+    margin: 1.5em auto 3em auto;
+  }
+
+  #pageFooter .expandedBlockDivider {
     width: 25%;
     margin: 1.5em auto 3em auto;
   }
