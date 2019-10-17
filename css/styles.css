@@ -302,7 +302,122 @@ body {
 
 /*******MAIN********/
 main {
-  height: 800px;
+  padding: 1.5em 0 3em 0;
+}
+
+.live-updates {
+  margin-bottom: 1.75em;
+}
+
+.live-updates ul li {
+  display: inline-block;
+}
+
+.live-updates li:not(:last-child)::after {
+  content: "|";
+  font-weight: 800;
+  color: #d9d9d9;
+  padding: 0 .2em 0 .5em;
+}
+
+.live-updates a {
+  font-size: .875rem;
+  font-weight: 600;
+  color: #262626;
+  text-decoration: none;
+  transition: color .3s;
+  line-height: 1.5;
+}
+
+.live-updates a:hover {
+  color: #CC0000;
+}
+
+.live-updates span {
+  color: #CC0000;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: .4em;
+}
+
+.main-title a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.main-title a:hover {
+  color: #CC0000;
+}
+
+.image-block {
+  position: relative;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+}
+
+.label-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background: #CC0000;
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 1.15em 1em;
+}
+
+.sub-title {
+  font-weight: 800;
+  padding: .5em 0;
+  line-height: 1.25;
+}
+
+.sub-title a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.sub-title a:hover {
+  color: #CC0000;
+}
+
+.last-news li {
+  border-top: 1px solid #d9d9d9;
+  padding: .5em 0;
+}
+
+.last-news a {
+  font-size: .875rem;
+  color: #262626;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: color .3s;
+}
+
+.last-news .headlineIcon {
+  color: #a6a6a6;
+  transition: color .3s;
+}
+
+.last-news a:hover,
+.last-news a:hover>.headlineIcon {
+  color: #CC0000;
+}
+
+.last-news .preText {
+  color: #CC0000;
 }
 
 /*******FOOTER********/
@@ -439,6 +554,11 @@ main {
   .expandedBlockDivider {
     width: 25%;
     margin: 1.5em auto 3em auto;
+  }
+
+  .live-updates {
+    text-align: center;
+    ;
   }
 
   #pageFooter .expandedBlockDivider {
