@@ -487,6 +487,60 @@ main .container-fluid>.row {
   text-decoration: underline;
 }
 
+.featured-title {
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.featured-title a {
+  color: #262626;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.featured-title a:hover {
+  color: #CC0000;
+}
+
+.featured-title::after {
+  content: "";
+  display: inline-block;
+  height: 9px;
+  border-bottom: 4px solid #d9d9d9;
+  border-top: 4px solid #d9d9d9;
+  width: 100%;
+  margin-left: .75em;
+}
+
+.paidContent-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding: .5em 0;
+  line-height: 1.25;
+}
+
+.paidContent-title a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.label-block-paid {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  color: #888;
+  background: #fff;
+  font-size: .75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: .75em;
+}
+
 /*******FOOTER********/
 #pageFooter {
   background: #0C0C0C;
@@ -592,6 +646,10 @@ main .container-fluid>.row {
 
   .expandedBottomBlock {
     justify-content: center;
+  }
+
+  .paidContent-title {
+    margin-bottom: 2em;
   }
 
   #pageFooter {
