@@ -305,6 +305,10 @@ main {
   padding: 1.5em 0 3em 0;
 }
 
+main .container-fluid>.row {
+  margin-bottom: 2em;
+}
+
 .live-updates {
   margin-bottom: 1.75em;
 }
@@ -359,7 +363,8 @@ main {
   position: relative;
 }
 
-.image-block img {
+.image-block img,
+.image-block video {
   width: 100%;
   height: auto;
 }
@@ -474,6 +479,12 @@ main {
 
 .topStories-title a:hover {
   color: #CC0000;
+}
+
+.banksy {
+  font-weight: 800;
+  color: green;
+  text-decoration: underline;
 }
 
 /*******FOOTER********/
@@ -612,6 +623,10 @@ main {
     margin: 1.5em auto 3em auto;
   }
 
+  main .container-fluid>.row {
+    margin-bottom: 0;
+  }
+
   .live-updates {
     text-align: center;
   }
@@ -619,6 +634,10 @@ main {
   .last-news,
   .last-news-bullets {
     margin-bottom: 2em;
+  }
+
+  .topStories-heading {
+    font-size: 1.5rem;
   }
 
   #pageFooter .expandedBlockDivider {
